@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!--        <configuration debug="false">-->
+<!--每隔60s扫描logback配置文件，不打印logback debug信息-->
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+<!--    定义参数常量-->
+<!--    tarce debug ingor warn error level of logback
+        logger.debug() value= default value is debug-->
+    <property name="log.level" value="debug"/>
+    <property name="log.maxHistory" />
+    <property name="log.filePath" />
+<!--    property level history filePath pattern-->
+<!--    appender console输出台-->
+
+
+<!--              [%thread] which thread-->
+<!--    <appender name="INFO-FILE"-->
+<!--              class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <file>${catalina.base}/web/logs/info/info.log</file>-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            <fileNamePattern>${catalina.base}/web/logs/info/info.%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>-->
+<!--            <timeBasedFileNamingAndTriggeringPolicy-->
+<!--                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
+<!--                <maxFileSize>1024MB</maxFileSize>-->
+<!--            </timeBasedFileNamingAndTriggeringPolicy>-->
+<!--            <maxHistory>30</maxHistory>-->
+<!--        </rollingPolicy>-->
+<!--        <layout class="ch.qos.logback.classic.PatternLayout">-->
+<!--            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{55} - -->
+<!--                %msg%n-->
+<!--            </pattern>-->
+<!--        </layout>-->
+<!--    </appender>-->
+<!--    <appender name="ACCESS-FILE"-->
+<!--              class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <file>-->
+<!--            ${catalina.base}/web/logs/access/access.log</file>-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            <FileNamePattern>${catalina.base}/webapps/myo2o/logs/access/access.%d{yyyy-MM-dd}.%i.log.zip</FileNamePattern>-->
+<!--            <timeBasedFileNamingAndTriggeringPolicy-->
+<!--                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
+<!--                <maxFileSize>1024MB</maxFileSize>-->
+<!--            </timeBasedFileNamingAndTriggeringPolicy>-->
+<!--            <maxHistory>30</maxHistory>-->
+<!--        </rollingPolicy>-->
+<!--        <layout class="ch.qos.logback.classic.PatternLayout">-->
+<!--            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{55} - -->
+<!--                %msg%n-->
+<!--            </pattern>-->
+<!--        </layout>-->
+<!--    </appender>-->
+<!--    -->
+<!--    <logger name="com.imooc.myo2o" level="DEBUG" additivity="false">-->
+<!--        <appender-ref ref="ACCESS-FILE" />-->
+<!--    </logger>-->
+<!--    <root level="INFO">-->
+<!--        <appender-ref ref="INFO-FILE" />-->
+<!--    </root>-->
+</configuration>
