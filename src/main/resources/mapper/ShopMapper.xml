@@ -166,6 +166,10 @@
         VALUES
         (#{shopId},#{shopName})
     </insert>
+    <select id="checkShopName" resultType="int" parameterType="string" >
+        select count(1) from tb_shop
+        where shop_name = #{shopName}
+    </select>
 <!--     {shopName},#{shopDesc},#{shopAddr},#{phone},#{shopImg},
         {longitude},#{latitude},#{createTime},#{lastEditTime},
         {enableStatus},#{advice})-->

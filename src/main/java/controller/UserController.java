@@ -14,6 +14,6 @@ public class UserController {
     @Autowired
     UserService userService;
     public Result<User> register(String userName,String password){
-
+        return null;
     }
 }

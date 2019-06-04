@@ -1,7 +1,7 @@
 package service;
 
+import common.Result;
 import entity.Shop;
-import main.java.common.Result;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 

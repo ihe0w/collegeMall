@@ -1,7 +1,8 @@
 package service.Impl;
 
+import common.Result;
 import entity.Shop;
-import main.java.common.Result;
+
 import org.springframework.stereotype.Service;
 import service.ShopService;
 //why I add service inService package

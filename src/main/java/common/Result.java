@@ -12,16 +12,18 @@ public class Result<T> {
     //int or enum?
     private Integer resultCode;
     private T data;
+//    private Result(){}
 
-    public Result(Integer resultCode,T data) {
+    private Result(Integer resultCode,T data) {
         this.resultCode = resultCode;
         this.data=data;
     }
+    //我觉得暂时这个result建造还是靠...
 
-    public static <T> Result<T> createBySuccess(T data){
+    public static <T> Result<T> createResult(Integer resultCode,T data){
         return new Result<T>(Const.SUCCESS,data);
     }
-    public static <T> Result<T> createByFailed(){};
+
     public boolean isSuccess(){
         return resultCode==Const.SUCCESS;
     }
